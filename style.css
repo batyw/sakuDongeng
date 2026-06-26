@@ -83,19 +83,18 @@ th { background: #fff1b6; color: #653823; font-weight: 1000; }
 .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(145px, 1fr)); gap: clamp(10px, 2vmin, 16px); margin-top: 18px; }
 .story-card { border: 0; cursor: pointer; border-radius: 24px; padding: 13px; min-height: 156px; background: linear-gradient(180deg, var(--c1), var(--c2)); box-shadow: 0 8px 0 rgba(92, 50, 23, .18); display: grid; gap: 8px; align-content: space-between; position: relative; overflow: hidden; text-align: left; }
 .story-card::after { content: ""; position: absolute; width: 130px; height: 130px; right: -45px; top: -45px; background: rgba(255,255,255,.34); border-radius: 999px; }
-.story-card .big-icon { font-size: 44px; z-index: 1; }
-.story-card h3 { margin: 0; font-size: clamp(16px, 3.2vmin, 22px); z-index: 1; color: #512716; }
-.story-card p { margin: 0; font-size: 12px; font-weight: 800; color: rgba(73, 38, 20, 0.75); z-index: 1; }
+.story-cover-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; opacity: 0.6; mix-blend-mode: overlay; transition: opacity 0.2s ease, transform 0.2s ease; }
+.story-card:hover .story-cover-img { opacity: 0.9; transform: scale(1.05); mix-blend-mode: normal; }
+.story-card h3 { margin: 0; font-size: clamp(16px, 3.2vmin, 22px); z-index: 2; position: relative; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
+.story-card p { margin: 0; font-size: 12px; font-weight: 800; color: #fff; z-index: 2; position: relative; text-shadow: 0 1px 3px rgba(0,0,0,0.8); }
+.hero-cover-img { width: 100%; max-width: 250px; height: auto; display: block; margin: 0 auto 15px; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.15); border: 5px solid rgba(255,255,255,0.8); }
 .story-card.done::before { content: "✓ Selesai"; position: absolute; top: 10px; right: 10px; z-index: 2; background: rgba(255,255,255,.86); border-radius: 999px; padding: 5px 8px; font-size: 11px; font-weight: 1000; color: #26713a; }
 .badge-row, .action-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 14px; }
 .badge { border-radius: 999px; padding: 8px 12px; background: #eadcc6; color: #866f58; border: 2px solid rgba(87, 55, 28, .14); font-weight: 1000; }
 .badge.unlocked { background: linear-gradient(180deg, #ffe787, #ffb83e); color: #663719; box-shadow: 0 5px 0 rgba(134, 76, 22, .18); }
 .play-layout { height: 100%; display: grid; grid-template-rows: minmax(190px, 45%) auto minmax(150px, 1fr); gap: clamp(9px, 1.8vmin, 14px); }
 .art-card { position: relative; overflow: hidden; border-radius: 28px; border: 5px solid rgba(105, 58, 31, .25); background: #bfefff; box-shadow: inset 0 0 0 3px rgba(255,255,255,.4), 0 10px 22px rgba(74, 45, 21, .16); }
-.story-art { width: 100%; height: 100%; display: block; }
-.story-art .hero-bob { animation: bob 2.4s ease-in-out infinite; transform-origin: center bottom; }
-.story-art .spark { animation: twinkle 1.6s ease-in-out infinite alternate; transform-origin: center; }
-.story-art .cloud { animation: drift 8s ease-in-out infinite alternate; }
+.story-art-img { width: 100%; height: 100%; display: block; object-fit: cover; }
 @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
 @keyframes twinkle { from { opacity:.45; transform: scale(.82); } to { opacity:1; transform: scale(1.1); } }
 @keyframes drift { from { transform: translateX(-7px); } to { transform: translateX(11px); } }

@@ -214,6 +214,174 @@
           neutral: { title: "Ending Netral: Pulang dengan Janji", text: "Candra Kirana pulang, tetapi ia hampir lupa berpamitan. Ia berjanji akan mengunjungi nenek lagi.", moral: "Pesan moral: Jangan lupa orang yang menolong kita." },
           bad: { title: "Ending Buruk: Kilau yang Meredup", text: "Keong Mas lupa bersyukur dan pergi tergesa-gesa. Cahaya emasnya meredup sampai ia belajar meminta maaf.", moral: "Pesan moral: Kebaikan harus dibalas dengan hormat, bukan dilupakan." }
         }
+      },
+      {
+        id: "danau", title: "Danau Toba", hero: "Toba", icon: "🐟", place: "lake", colors: ["#a1c4fd", "#c2e9fb"], item: "sisik ikan",
+        intro: [
+          "Toba adalah seorang pemuda yatim piatu yang rajin bertani dan memancing.",
+          "Suatu hari, ia mendapat tangkapan ikan mas besar yang ajaib.",
+          "Ikan itu berubah menjadi seorang wanita cantik yang bersedia menjadi istrinya dengan satu syarat."
+        ],
+        choice1: {
+          prompt: "Syarat apa yang diberikan oleh wanita jelmaan ikan mas?",
+          options: [
+            { text: "Jangan pernah menyebut asal usulnya", points: 15, wisdom: 2, reply: "Toba menyetujui syarat tersebut dengan hati yang mantap." },
+            { text: "Jangan pernah makan ikan lagi", points: 0, wisdom: -1, reply: "Wanita itu tersenyum sedih karena Toba salah mengerti." },
+            { text: "Harus menjadi raja", points: 5, wisdom: 0, reply: "Toba kebingungan, namun akhirnya wanita itu menjelaskan syarat sebenarnya." }
+          ]
+        },
+        bridge1: "Toba dan wanita itu menikah, lalu dikaruniai seorang anak laki-laki bernama Samosir.",
+        miniQuiz: { question: "Jika Samosir makan 2 piring nasi di pagi hari dan 3 piring di siang hari, berapa jumlah piring nasi yang dimakannya?", options: ["4", "5", "6"], correct: 1, praise: "Tepat! 2 + 3 = 5. Kamu pintar berhitung." },
+        choice2: {
+          prompt: "Suatu hari, Samosir disuruh mengantar bekal untuk ayahnya, namun ia memakannya di jalan. Apa reaksi terbaik Toba?",
+          options: [
+            { text: "Mengingat janji dan menahan amarah", points: 15, wisdom: 2, reply: "Toba menarik napas panjang. Ia ingat janjinya kepada sang istri." },
+            { text: "Marah besar dan membentak Samosir", points: 0, wisdom: -2, reply: "Samosir menangis ketakutan dan lari pulang." },
+            { text: "Diam saja tapi menyimpan dendam", points: 5, wisdom: 0, reply: "Toba kelaparan, hatinya mendongkol sepanjang hari." }
+          ]
+        },
+        logicQuiz: { question: "Apa pelajaran yang bisa diambil dari sifat Samosir yang menghabiskan bekal ayahnya?", options: ["Kita harus rakus", "Kita harus amanah (dapat dipercaya)", "Bekal tidak penting"], correct: 1, praise: "Benar sekali! Kita harus selalu amanah dengan tugas." },
+        storyQuiz: { question: "Menurut cerita, siapa nama anak dari Toba dan wanita jelmaan ikan mas?", options: ["Sangkuriang", "Malin", "Samosir"], correct: 2, praise: "Hebat! Nama anaknya adalah Samosir." },
+        finalChoice: {
+          prompt: "Saat kemarahan memuncak, Toba hampir mengumpat asal-usul istrinya kepada Samosir. Apa yang sebaiknya ia lakukan?",
+          options: [
+            { text: "Menutup mulut dan segera meminta maaf", points: 15, wisdom: 2, reply: "Toba berhasil menahan kata-kata kasar yang hampir keluar." },
+            { text: "Membentak 'Dasar anak ikan!'", points: 0, wisdom: -2, reply: "Toba melanggar pantangan! Samosir lari sambil menangis." },
+            { text: "Meninggalkan Samosir sendirian", points: 5, wisdom: 0, reply: "Toba pergi menenangkan diri, tapi masalah belum usai." }
+          ]
+        },
+        preEnding: "Langit mendadak mendung, dan tanah mulai bergetar saat sebuah keputusan besar diambil.",
+        endings: {
+          good: { title: "Ending Baik: Keluarga yang Sabar", text: "Toba berhasil menahan amarahnya. Ia mendidik Samosir dengan baik dan keluarga mereka hidup bahagia.", moral: "Pesan moral: Kesabaran akan menyelamatkan kita dari penyesalan." },
+          neutral: { title: "Ending Netral: Maaf yang Terucap", text: "Toba hampir melanggar janjinya namun tersadar. Keluarganya tetap utuh, meskipun butuh waktu untuk saling memaafkan.", moral: "Pesan moral: Setiap orang bisa berbuat salah, namun minta maaflah." },
+          bad: { title: "Ending Buruk: Danau Toba Tercipta", text: "Toba melanggar janji dengan memanggil anaknya 'anak ikan'. Hujan deras turun tanpa henti dan menenggelamkan desa, menciptakan Danau Toba.", moral: "Pesan moral: Jangan pernah melanggar janji yang telah dibuat." }
+        }
+      },
+      {
+        id: "roro", title: "Roro Jonggrang", hero: "Roro Jonggrang", icon: "🗿", place: "palace", colors: ["#5d4037", "#bcaaa4"], item: "lesung",
+        intro: [
+          "Roro Jonggrang adalah putri cantik dari Kerajaan Prambanan.",
+          "Bandung Bondowoso, seorang pangeran sakti, ingin menikahinya setelah mengalahkan ayahnya.",
+          "Sang putri yang tidak sudi memberikan syarat yang mustahil: membangun seribu candi dalam semalam."
+        ],
+        choice1: {
+          prompt: "Bandung Bondowoso meminta bantuan jin untuk membangun candi. Apa yang sebaiknya dilakukan Roro Jonggrang?",
+          options: [
+            { text: "Memikirkan rencana cerdik", points: 15, wisdom: 2, reply: "Roro Jonggrang mulai mencari cara untuk menggagalkan rencana tersebut secara halus." },
+            { text: "Menangis dan pasrah", points: 0, wisdom: -1, reply: "Air mata tidak akan menghentikan seribu jin yang bekerja cepat." },
+            { text: "Bersembunyi di hutan", points: 5, wisdom: 0, reply: "Sang putri aman sementara, namun kerajaannya terancam." }
+          ]
+        },
+        bridge1: "Malam semakin larut. Candi-candi mulai berdiri kokoh dengan cepat.",
+        miniQuiz: { question: "Jika para jin sudah membangun 900 candi dan tersisa 100 candi lagi, berapa total candi yang diminta?", options: ["900", "1000", "1100"], correct: 1, praise: "Benar! 900 + 100 = 1000 candi." },
+        choice2: {
+          prompt: "Untuk menghentikan para jin, Roro Jonggrang butuh ide brilian. Apa idenya?",
+          options: [
+            { text: "Membangunkan dayang untuk menumbuk lesung dan membakar jerami", points: 15, wisdom: 2, reply: "Ide yang brilian! Suara lesung dan cahaya akan dikira fajar." },
+            { text: "Menantang jin bertarung", points: 0, wisdom: -2, reply: "Ide yang buruk. Sang putri tak mungkin menang melawan jin." },
+            { text: "Meminta bantuan raja lain", points: 5, wisdom: 0, reply: "Tidak ada waktu untuk mencari bantuan dari kerajaan luar." }
+          ]
+        },
+        logicQuiz: { question: "Mengapa membakar jerami dan menumbuk lesung bisa mengusir jin?", options: ["Jin takut pada suara dan cahaya", "Membuat suasana seperti fajar atau pagi hari", "Karena jin benci bau jerami"], correct: 1, praise: "Tepat sekali! Jin hanya bekerja di malam hari dan takut pada matahari." },
+        storyQuiz: { question: "Apa nama kompleks candi yang konon dibangun oleh Bandung Bondowoso?", options: ["Candi Borobudur", "Candi Prambanan", "Candi Muara Takus"], correct: 1, praise: "Benar! Legenda ini terkait dengan Candi Prambanan." },
+        finalChoice: {
+          prompt: "Fajar buatan berhasil menipu jin, namun Bandung Bondowoso mengetahui kecurangan tersebut. Apa tindakan putri?",
+          options: [
+            { text: "Berani mengakui alasannya dengan jujur", points: 15, wisdom: 2, reply: "Sang putri berdiri tegar menyampaikan alasannya." },
+            { text: "Mengejek kekalahan Bandung Bondowoso", points: 0, wisdom: -2, reply: "Ejekan memicu kemarahan besar dari pangeran sakti itu." },
+            { text: "Kabur menyelamatkan diri", points: 5, wisdom: 0, reply: "Sang putri terus berlari, namun kemarahan pangeran mengejarnya." }
+          ]
+        },
+        preEnding: "Candi yang terbangun baru 999. Bandung Bondowoso yang murka menatap sang putri dengan tatapan tajam.",
+        endings: {
+          good: { title: "Ending Baik: Kebenaran yang Diakui", text: "Roro Jonggrang jujur dan Bandung Bondowoso sadar bahwa cinta tak bisa dipaksa. Ia pergi dengan damai.", moral: "Pesan moral: Cinta tidak bisa dipaksa, dan kecerdasan dapat menyelesaikan masalah." },
+          neutral: { title: "Ending Netral: Pelarian yang Panjang", text: "Roro Jonggrang berhasil kabur. Kerajaannya dikuasai, namun ia tetap bebas dan terus mengingat ceritanya.", moral: "Pesan moral: Kadang kita harus melepaskan sesuatu untuk menjaga kebebasan." },
+          bad: { title: "Ending Buruk: Candi Keseribu", text: "Kemarahan Bandung Bondowoso memuncak. Ia mengutuk Roro Jonggrang menjadi arca untuk melengkapi seribu candi.", moral: "Pesan moral: Perbuatan curang kadang membawa akibat yang fatal." }
+        }
+      },
+      {
+        id: "lutung", title: "Lutung Kasarung", hero: "Purbasari", icon: "🐒", place: "forest", colors: ["#2d4023", "#81c784"], item: "air ajaib",
+        intro: [
+          "Purbasari adalah putri yang baik hati. Kakaknya, Purbararang, iri karena Purbasari ditunjuk menjadi Ratu.",
+          "Purbararang mengutuk kulit Purbasari menjadi hitam legam dan membuangnya ke hutan.",
+          "Di hutan, Purbasari bertemu dengan seekor kera hitam bernama Lutung Kasarung."
+        ],
+        choice1: {
+          prompt: "Saat bertemu Lutung Kasarung yang aneh, apa yang sebaiknya dilakukan Purbasari?",
+          options: [
+            { text: "Berteman dan menerimanya", points: 15, wisdom: 2, reply: "Purbasari melihat hati yang baik di balik wujud sang lutung." },
+            { text: "Mengusirnya karena takut", points: 0, wisdom: -1, reply: "Lutung sedih dan menjauh, meninggalkan Purbasari sendirian." },
+            { text: "Acuh tak acuh", points: 5, wisdom: 0, reply: "Mereka berbagi hutan, namun belum menjadi teman." }
+          ]
+        },
+        bridge1: "Lutung Kasarung selalu membawa buah-buahan segar untuk Purbasari setiap pagi.",
+        miniQuiz: { question: "Jika Lutung membawa 4 apel dan 5 pisang, berapa banyak buah yang ia bawa?", options: ["8", "9", "10"], correct: 1, praise: "Tepat! 4 + 5 = 9 buah. Cukup untuk makan seharian." },
+        choice2: {
+          prompt: "Lutung Kasarung menunjukkan telaga ajaib dan menyuruh Purbasari mandi di sana. Apa reaksinya?",
+          options: [
+            { text: "Percaya dan mandi di telaga", points: 15, wisdom: 2, reply: "Kepercayaan Purbasari membawa mukjizat pada dirinya." },
+            { text: "Menolak karena ragu", points: 0, wisdom: -1, reply: "Kutukannya tidak hilang karena ia meragukan niat baik temannya." },
+            { text: "Mencuci tangan saja", points: 5, wisdom: 0, reply: "Hanya tangannya yang bersih, sisanya masih terkena kutukan." }
+          ]
+        },
+        logicQuiz: { question: "Mengapa Purbararang mengusir adiknya?", options: ["Karena Purbasari jahat", "Karena Purbararang iri dan serakah", "Karena mereka bermain petak umpet"], correct: 1, praise: "Benar! Sifat iri hati dan serakah membuat seseorang melakukan hal buruk." },
+        storyQuiz: { question: "Siapakah sebenarnya Lutung Kasarung?", options: ["Seorang pangeran tampan dari kahyangan", "Kera biasa yang pintar", "Penjaga hutan rimba"], correct: 0, praise: "Hebat! Lutung Kasarung adalah Pangeran Guruminda yang sedang dikutuk." },
+        finalChoice: {
+          prompt: "Purbasari kembali ke istana dengan kulit bersih. Purbararang menantangnya siapa yang punya tunangan paling tampan. Apa yang Purbasari lakukan?",
+          options: [
+            { text: "Mengenalkan Lutung Kasarung apa adanya", points: 15, wisdom: 2, reply: "Purbasari tidak malu mengakui temannya meski berwujud kera." },
+            { text: "Menangis dan mundur", points: 0, wisdom: -1, reply: "Purbararang tertawa menang melihat adiknya menyerah." },
+            { text: "Berbohong memiliki tunangan pangeran", points: 5, wisdom: 0, reply: "Kebohongan tidak akan menyelesaikan tantangan ini." }
+          ]
+        },
+        preEnding: "Saat Purbasari menggandeng Lutung Kasarung, sebuah cahaya terang turun menyelimuti sang kera.",
+        endings: {
+          good: { title: "Ending Baik: Kebaikan yang Menang", text: "Lutung Kasarung berubah menjadi pangeran tampan. Purbasari memaafkan kakaknya dan menjadi Ratu yang adil.", moral: "Pesan moral: Kebaikan dan ketulusan akan selalu menang melawan kejahatan dan iri hati." },
+          neutral: { title: "Ending Netral: Pengampunan", text: "Purbasari mendapatkan kembali haknya, namun memilih hidup tenang di luar istana bersama sang pangeran.", moral: "Pesan moral: Kedamaian hati lebih penting daripada kekuasaan." },
+          bad: { title: "Ending Buruk: Tersingkirkan", text: "Karena malu, Purbasari tak berani mengenalkan Lutung. Ia kalah dan harus kembali ke hutan tanpa tahu kebenaran.", moral: "Pesan moral: Rasa malu dan ragu bisa membuat kita kehilangan kesempatan." }
+        }
+      },
+      {
+        id: "batu", title: "Batu Menangis", hero: "Gadis Cantik", icon: "🗿", place: "forest", colors: ["#546e7a", "#b0bec5"], item: "cermin",
+        intro: [
+          "Di sebuah desa, hiduplah seorang janda miskin bersama anak gadisnya yang sangat cantik.",
+          "Sayangnya, gadis itu sangat pemalas dan sombong. Ia tidak pernah mau membantu ibunya bekerja.",
+          "Suatu hari, mereka turun ke desa untuk berbelanja. Gadis itu berdandan cantik sementara ibunya berjalan di belakang membawa keranjang."
+        ],
+        choice1: {
+          prompt: "Saat orang-orang bertanya siapa wanita tua di belakangnya, apa yang harus dijawab sang gadis?",
+          options: [
+            { text: "Mengakui sebagai ibunya dengan bangga", points: 15, wisdom: 2, reply: "Hati ibunya berbunga-bunga mendengar pengakuan itu." },
+            { text: "Menjawab bahwa itu pembantunya", points: 0, wisdom: -2, reply: "Hati sang ibu hancur berkeping-keping." },
+            { text: "Diam saja tanpa menjawab", points: 5, wisdom: 0, reply: "Ibunya merasa sedih karena anaknya tidak mau mengakuinya." }
+          ]
+        },
+        bridge1: "Mereka melewati pasar yang ramai. Banyak mata tertuju pada kecantikan sang gadis.",
+        miniQuiz: { question: "Jika sang ibu membawa keranjang berisi 4 kelapa dan 2 sisir pisang, berapa banyak barang bawaannya?", options: ["5", "6", "7"], correct: 1, praise: "Tepat! 4 + 2 = 6 barang. Beban yang cukup berat untuk sang ibu." },
+        choice2: {
+          prompt: "Ibunya tersandung dan hampir jatuh. Apa yang seharusnya dilakukan sang gadis?",
+          options: [
+            { text: "Segera menolong dan menuntun ibunya", points: 15, wisdom: 2, reply: "Ibu merasa bersyukur anaknya memiliki rasa empati." },
+            { text: "Membentak karena membuatnya malu", points: 0, wisdom: -2, reply: "Air mata mulai menetes dari mata sang ibu." },
+            { text: "Berjalan lebih cepat meninggalkan ibunya", points: 5, wisdom: 0, reply: "Ibu tertinggal jauh di belakang dengan hati yang perih." }
+          ]
+        },
+        logicQuiz: { question: "Sikap seperti apa yang ditunjukkan gadis itu saat menyebut ibunya pembantu?", options: ["Sombong dan durhaka", "Sopan dan santun", "Rajin dan hemat"], correct: 0, praise: "Benar. Sikap itu sangat sombong dan menyakiti hati orang tua." },
+        storyQuiz: { question: "Legenda Batu Menangis berasal dari daerah mana?", options: ["Sumatera Barat", "Kalimantan Barat", "Jawa Timur"], correct: 1, praise: "Hebat! Legenda ini sangat terkenal di daerah Kalimantan Barat." },
+        finalChoice: {
+          prompt: "Sang ibu tak tahan lagi dan berdoa kepada Tuhan. Sang gadis mulai merasa kakinya kaku. Apa yang harus ia lakukan?",
+          options: [
+            { text: "Segera bersujud, menangis, dan minta maaf tulus", points: 15, wisdom: 2, reply: "Ketulusannya mungkin bisa meringankan hukuman." },
+            { text: "Marah dan menyalahkan ibunya", points: 0, wisdom: -2, reply: "Kutukan bekerja semakin cepat merayap ke tubuhnya." },
+            { text: "Meminta bantuan orang sekitar", points: 5, wisdom: 0, reply: "Orang sekitar tidak bisa melawan kekuatan doa seorang ibu." }
+          ]
+        },
+        preEnding: "Tubuh gadis itu semakin mengeras. Air mata mulai mengalir dari matanya saat penyesalan datang terlambat.",
+        endings: {
+          good: { title: "Ending Baik: Penyesalan yang Mengubah Hati", text: "Gadis itu meminta maaf dengan sangat tulus. Kutukan itu terhenti, ia berjanji akan menyayangi ibunya selamanya.", moral: "Pesan moral: Selalu ada waktu untuk meminta maaf sebelum semuanya terlambat." },
+          neutral: { title: "Ending Netral: Pengingat Setengah Batu", text: "Kakinya telah menjadi batu, namun bagian atas tubuhnya kembali normal. Ia hidup sebagai pengingat akan kesombongan.", moral: "Pesan moral: Kesalahan besar selalu meninggalkan bekas." },
+          bad: { title: "Ending Buruk: Menjadi Batu Menangis", text: "Gadis itu sepenuhnya berubah menjadi batu yang terus mengeluarkan air mata. Ia menjadi legenda peringatan bagi anak-anak yang durhaka.", moral: "Pesan moral: Jangan pernah menyakiti hati orang tua yang merawatmu." }
+        }
       }
     ];
 
@@ -313,7 +481,7 @@
         const done = save.completed.includes(story.id);
         return `
           <button class="story-card ${done ? "done" : ""}" style="--c1:${story.colors[0]};--c2:${story.colors[1]}" data-action="start-story" data-story="${story.id}">
-            <span class="big-icon">${story.icon}</span>
+            <img src="assets/images/${story.id}.png" alt="Cover ${story.title}" class="story-cover-img" />
             <h3>${esc(story.title)}</h3>
             <p>${done ? "Main lagi untuk ending lain" : "Ketuk untuk membaca"}</p>
           </button>
@@ -599,22 +767,19 @@
       `, false);
     }
 
-    // ===== FUNGSI GAMBAR SVG =====
+    // ===== FUNGSI GAMBAR DINAMIS =====
     function sceneSvg(story, mood) {
-      const id = story.id; const [c1, c2] = story.colors; const sky2 = mood === "ending" ? "#fff4a7" : "#aeeeff"; const sparkle = mood === "quiz" || mood === "ending" ? 1 : 0;
-      const place = placeShapes(story.place, id, c1, c2);
-      return `<svg class="story-art" viewBox="0 0 900 430" role="img" aria-label="Ilustrasi ${esc(story.title)}" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="sky-${id}" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#e9fbff"/><stop offset="1" stop-color="${sky2}"/></linearGradient><linearGradient id="ground-${id}" x1="0" x2="1"><stop stop-color="${c1}"/><stop offset="1" stop-color="${c2}"/></linearGradient></defs><rect width="900" height="430" fill="url(#sky-${id})"/><circle cx="760" cy="72" r="43" fill="#ffdb65" opacity=".95"/><g class="cloud" fill="#fff" opacity=".82"><ellipse cx="145" cy="80" rx="48" ry="22"/><ellipse cx="190" cy="77" rx="55" ry="26"/><ellipse cx="235" cy="85" rx="38" ry="18"/></g><g class="cloud" fill="#fff" opacity=".72"><ellipse cx="520" cy="96" rx="42" ry="19"/><ellipse cx="560" cy="91" rx="50" ry="23"/><ellipse cx="602" cy="99" rx="35" ry="16"/></g>${place}<path d="M0 348 C150 294 266 335 400 306 C544 274 686 302 900 266 L900 430 L0 430 Z" fill="url(#ground-${id})" opacity=".93"/><path d="M350 430 C412 374 470 344 545 318 C490 374 485 405 510 430 Z" fill="#f7d08a" opacity=".95"/>${heroShape(story, c1, c2)}<g transform="translate(102 292)"><circle class="spark" cx="0" cy="0" r="9" fill="#fff17a" opacity="${sparkle ? 1 : .3}"/><text x="20" y="18" font-size="58">${story.icon}</text></g><g fill="#fff8a7" opacity="${sparkle ? .95 : .28}" class="spark"><path d="M710 155 l8 18 18 8 -18 8 -8 18 -8-18 -18-8 18-8z"/><path d="M160 180 l6 13 13 6 -13 6 -6 13 -6-13 -13-6 13-6z"/></g></svg>`;
-    }
-    function placeShapes(place, id, c1, c2) {
-      if (place === "sea") return `<path d="M0 278 C90 252 175 305 270 278 C360 250 445 305 540 278 C640 246 735 306 900 268 L900 430 L0 430 Z" fill="#3cb7e9" opacity=".8"/><path d="M0 315 C120 287 230 336 340 310 C470 280 590 334 700 310 C780 292 835 300 900 292" fill="none" stroke="#e9fbff" stroke-width="8" opacity=".72"/><g transform="translate(210 235)"><path d="M0 65 L180 65 L145 105 L32 105 Z" fill="#a86433"/><path d="M90 0 L90 65" stroke="#74401f" stroke-width="8"/><path d="M98 10 L162 52 L98 52 Z" fill="#fff0b3"/></g>`;
-      if (place === "forest") return `<g fill="#3eaa44"><circle cx="110" cy="236" r="58"/><circle cx="160" cy="210" r="62"/><circle cx="230" cy="238" r="56"/><circle cx="716" cy="218" r="70"/><circle cx="790" cy="250" r="62"/></g><g fill="#8a552b"><rect x="145" y="218" width="28" height="140" rx="11"/><rect x="750" y="220" width="32" height="140" rx="12"/></g><path d="M90 130 C135 170 150 210 135 283" fill="none" stroke="#2c8a3a" stroke-width="18"/><path d="M804 120 C756 172 742 216 758 290" fill="none" stroke="#2c8a3a" stroke-width="18"/>`;
-      if (place === "mountain") return `<path d="M110 328 L330 98 L544 328 Z" fill="#7fb1ca"/><path d="M330 98 L392 165 L300 162 Z" fill="#fff7df"/><path d="M390 330 L622 130 L832 330 Z" fill="#9a8ad7"/><path d="M622 130 L686 196 L586 194 Z" fill="#fff7df"/><ellipse cx="608" cy="350" rx="210" ry="38" fill="#61c8ed" opacity=".82"/>`;
-      if (place === "palace") return `<g transform="translate(120 142)"><rect x="0" y="105" width="285" height="150" rx="18" fill="#ffcf7e"/><rect x="35" y="50" width="70" height="205" fill="#f59a64"/><rect x="180" y="50" width="70" height="205" fill="#f59a64"/><path d="M20 50 L70 0 L120 50 Z" fill="#d95847"/><path d="M165 50 L215 0 L265 50 Z" fill="#d95847"/><rect x="115" y="130" width="56" height="125" rx="28" fill="#8d5432"/></g><path d="M560 292 C610 254 680 248 744 294" fill="none" stroke="#e8a53c" stroke-width="20" stroke-linecap="round"/>`;
-      return `<g transform="translate(90 178)"><rect x="0" y="80" width="190" height="116" rx="12" fill="#c1783c"/><path d="M-20 84 L94 0 L210 84 Z" fill="#8d4f28"/><rect x="25" y="120" width="42" height="76" fill="#70401f"/><rect x="104" y="112" width="48" height="42" fill="#aeeeff"/></g><g transform="translate(635 168)"><rect x="0" y="88" width="170" height="106" rx="12" fill="#d0904b"/><path d="M-15 92 L80 20 L185 92 Z" fill="#92582b"/><rect x="72" y="122" width="42" height="72" fill="#714222"/></g><path d="M42 306 C88 250 110 218 108 140" fill="none" stroke="#6aa33d" stroke-width="16"/><path d="M82 190 C38 166 28 140 38 112" fill="none" stroke="#5aa031" stroke-width="13"/>`;
-    }
-    function heroShape(story, c1, c2) {
-      const outfit = story.id === "malin" ? "#247fc0" : story.id === "timun" ? "#6abf45" : story.id === "sangkuriang" ? "#8456c8" : story.id === "keong" ? "#f2b63f" : "#f07485";
-      return `<g class="hero-bob" transform="translate(610 174)"><ellipse cx="88" cy="210" rx="82" ry="18" fill="rgba(81,49,24,.22)"/><path d="M46 88 C36 120 42 164 20 202 L158 202 C135 163 142 116 126 88 Z" fill="${outfit}" stroke="#62351d" stroke-width="5"/><circle cx="86" cy="58" r="48" fill="#ffd29c" stroke="#62351d" stroke-width="5"/><path d="M42 48 C60 8 113 5 132 46 C108 28 76 26 42 48 Z" fill="#63351f"/><circle cx="70" cy="62" r="5" fill="#3f2415"/><circle cx="102" cy="62" r="5" fill="#3f2415"/><path d="M73 84 Q87 96 104 84" fill="none" stroke="#8b3e2b" stroke-width="5" stroke-linecap="round"/><path d="M48 112 C12 120 2 148 26 166" fill="none" stroke="#ffd29c" stroke-width="18" stroke-linecap="round"/><path d="M126 112 C166 119 174 148 148 168" fill="none" stroke="#ffd29c" stroke-width="18" stroke-linecap="round"/><rect x="55" y="198" width="22" height="60" rx="10" fill="#3f7d49"/><rect x="100" y="198" width="22" height="60" rx="10" fill="#3f7d49"/><text x="52" y="162" font-size="58">${story.icon}</text></g>`;
+      const hasAction = ["bawang", "malin", "timun", "sangkuriang"].includes(story.id);
+      const hasEnding = ["bawang", "malin", "timun"].includes(story.id);
+      
+      let imgName = story.id;
+      if (mood === "ending" && hasEnding) {
+        imgName = `${story.id}_ending`;
+      } else if ((mood === "choice" || mood === "bridge" || mood === "quiz") && hasAction) {
+        imgName = `${story.id}_action`;
+      }
+      
+      return `<img src="assets/images/${imgName}.png" alt="Ilustrasi ${esc(story.title)}" class="story-art-img" />`;
     }
 
     // ===== FUNGSI AUDIO AUDIO API =====
@@ -629,10 +794,17 @@
     function playCorrect() { tone(660, .09, "sine", .18); tone(880, .12, "sine", .16, .09); }
     function playWrong() { tone(220, .12, "sawtooth", .09); tone(170, .12, "sawtooth", .07, .1); }
     function startMusic() {
-      if (!soundOn || musicTimer) return; ensureAudio(); const notes = [392, 440, 523, 494, 440, 392, 330, 392]; let index = 0;
-      musicTimer = setInterval(() => { if (!soundOn) return; tone(notes[index % notes.length], .18, "sine", .045); index += 1; }, 720);
+      if (!soundOn) return; 
+      if (!window.bgmAudio) {
+        window.bgmAudio = new Audio('assets/audio/bgm.mp3');
+        window.bgmAudio.loop = true;
+        window.bgmAudio.volume = 0.4;
+      }
+      window.bgmAudio.play().catch(e => console.log("BGM play error", e));
     }
-    function stopMusic() { if (musicTimer) clearInterval(musicTimer); musicTimer = null; }
+    function stopMusic() { 
+      if (window.bgmAudio) window.bgmAudio.pause(); 
+    }
     function toggleSound() {
       soundOn = !soundOn; save.soundOn = soundOn; persist();
       if (audio?.master) audio.master.gain.value = soundOn ? 0.18 : 0;
@@ -658,7 +830,15 @@
       if (action === "show-eval") { playButton(); renderEvaluation(); }
       if (action === "submit-eval") submitEvaluation();
       if (action === "toggle-sound") toggleSound();
-      if (action === "admin") { session = null; playButton(); renderAdmin(); }
+      if (action === "admin") { 
+        const pass = prompt("Masukkan password admin:");
+        if (pass === "guru123") {
+          session = null; playButton(); renderAdmin(); 
+        } else {
+          alert("Password salah!");
+          playWrong();
+        }
+      }
       if (action === "clear-records") {
         if (confirm("Yakin ingin menghapus SELURUH rekap data siswa dari perangkat ini? (Data tidak bisa dikembalikan)")) {
           save.records = []; persist(); playWrong(); renderAdmin();
