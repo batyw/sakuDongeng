@@ -20,7 +20,7 @@ html, body {
   background: #f9db82; color: var(--ink);
 }
 
-body { position: fixed; inset: 0; touch-action: none; user-select: none; -webkit-tap-highlight-color: transparent; }
+body { position: fixed; inset: 0; user-select: none; -webkit-tap-highlight-color: transparent; }
 button, label, .tap-card { user-select: none; touch-action: manipulation; }
 button, input, textarea, select { font: inherit; }
 [hidden] { display: none !important; }
