@@ -796,7 +796,7 @@
     function startMusic() {
       if (!soundOn) return; 
       if (!window.bgmAudio) {
-        window.bgmAudio = new Audio('assets/audio/bgm.mp3');
+        window.bgmAudio = new Audio('assets/audio/bgm.ogg');
         window.bgmAudio.loop = true;
         window.bgmAudio.volume = 0.4;
       }
