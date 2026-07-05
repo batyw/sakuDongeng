@@ -79,7 +79,7 @@ th { background: #fff1b6; color: #653823; font-weight: 1000; }
 .panel { flex: 1 1 0; min-height: 0; border-radius: clamp(22px, 5vmin, 38px); background: rgba(255, 249, 226, 0.95); border: 5px solid rgba(114, 66, 28, 0.22); box-shadow: var(--shadow); display: flex; flex-direction: column; overflow: hidden; }
 .screen { height: 100%; overflow-y: auto; overflow-x: hidden; -webkit-overflow-scrolling: touch; padding: clamp(14px, 3vmin, 24px); padding-bottom: clamp(30px, 6vmin, 50px); scrollbar-width: thin; display: block; }
 .global-footer { position: absolute; bottom: 12px; right: 18px; z-index: 1000; font-size: 13px; font-weight: 800; color: rgba(113, 76, 51, 0.8); text-shadow: 0 1px 2px rgba(255,255,255,0.8); pointer-events: none; }
-.center-screen { display: grid; place-items: center; text-align: center; }
+.center-screen { display: block; text-align: center; padding-top: max(10px, 4vh); }
 .hero-title { margin: 0; font-size: clamp(30px, 8vmin, 64px); color: #8a3d25; text-shadow: 0 4px 0 #fff0c4; }
 .subtitle { max-width: 650px; margin: 12px auto 0; color: #714c33; font-weight: 800; font-size: clamp(15px, 2.7vmin, 20px); }
 .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(145px, 1fr)); gap: clamp(10px, 2vmin, 16px); margin-top: 18px; }
